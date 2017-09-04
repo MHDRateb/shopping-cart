@@ -27,7 +27,7 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 2- open another terminal and run:- mongo.
 3- in the previous terminal run:- use shopcentre.
 4- copy this array to use it into the insertMany function in the next step.
-[
+```[
 ... {
 ... "urlPath": "lorem",
 ... "title": "Lorem",
@@ -58,7 +58,7 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 ... "title": "Amet",
 ... "price": 12
 ... }
-... ].
+... ]```.
 
 5- then run:- db.products.insertMany(past the previous array here).
 6- if you want to see how many documents you insert:- db.products.count().
