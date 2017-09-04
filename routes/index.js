@@ -20,5 +20,23 @@ router.get('/', function (req, res, next) {
   }
   dbClient.getproducts({}, callBack)
 });
+/* GET product page. */
+
+router.get('/products/:urlPath', function (req, res,next) {
+  const urlPath = req.params.urlPath;
+  const callBack = (error, product) => {
+    if (error) {
+      res.sendStatus(500)
+    }
+    else {
+      res.render('single-product', {
+        title: product.productTitle,
+        description: product.commentTitle,
+        product:product,
+      });
+    }
+  }
+  dbClient.getcomments({urlPath}, callBack)
+});
 
 module.exports = router;
