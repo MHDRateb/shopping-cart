@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-
-
 const dbClient = require('../helper/dbClient.js');
 
 /* GET home page. */
