@@ -23,10 +23,10 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 - Try to implement one or more of the following sorting options: **Highest Rated**, **Lowest Rated**, **A-Z**, **Z-A**, **Most Comments**.
 
 ## how to populate the database
-1- open the terminal and run:- sudo mongod
-2- open another terminal and run:- mongo
-3- in the previous terminal run:- use shopcentre
-4- copy this array to use it into the insertMany function in the next step
+1- open the terminal and run:- sudo mongod.
+2- open another terminal and run:- mongo.
+3- in the previous terminal run:- use shopcentre.
+4- copy this array to use it into the insertMany function in the next step.
 [
 ... {
 ... "urlPath": "lorem",
@@ -58,11 +58,11 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 ... "title": "Amet",
 ... "price": 12
 ... }
-... ]
+... ].
 
-5- then run:- db.products.insertMany(past the previous array here)
-6- if you want to see how many documents you insert:- db.products.count()
-6- if you want to see what you inserted run:- db.products.find().pretty()
+5- then run:- db.products.insertMany(past the previous array here).
+6- if you want to see how many documents you insert:- db.products.count().
+6- if you want to see what you inserted run:- db.products.find().pretty().
 
 ## Database name is 
 shopcentre
