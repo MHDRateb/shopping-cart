@@ -28,7 +28,7 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 - open another terminal and run:- mongo.
 - in the previous terminal run:- use shopcentre.
 - copy this array to use it into the insertMany function in the next step.
-```
+```javascript
 [
   {
     "urlPath": "lorem",
