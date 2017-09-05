@@ -72,6 +72,19 @@ shopcentre
 ## collection name is 
 products
 
+## how to use the ESLint
+ESLint is a tool for identifying and reporting on patterns found in JavaScript code, with the goal of making code more consistent and avoiding bugs. To use ESLint follow this steps:-
+1. open the project file by terminal.
+2. run this code to install eslint package:
+```javascript
+npm install
+```
+3. Then run:
+```javascript
+npm run eslint
+```
+4. The terminal will show the errors and their description inside the whole project, so try to solve it.
+
 ## Collaborators
 Khaled Ali
 Nasir
