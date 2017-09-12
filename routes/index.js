@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const dbClient = require('../helper/dbClient.js');
-
+const highRateProduct = require('../public/js/highRateProduct.js');
 /* GET home page. */
 
 router.get('/', function (req, res, next) {
@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
       res.sendStatus(500)
     }
     else {
+     // highRateProduct.applyTopProduct(products);
       res.render('index', {
         title: 'AcmeInc',
         description: 'We sell the finest goods and services.',
