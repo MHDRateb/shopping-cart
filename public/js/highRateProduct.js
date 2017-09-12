@@ -19,7 +19,7 @@ const callBack = (error, products) => {
         dbChange.applyRating(maxProduct, true);
     }
 }
-dbClient.getproducts({}, callBack)
+dbClient.getProducts({}, callBack)
 
 //  console.log(maxProduct);
 

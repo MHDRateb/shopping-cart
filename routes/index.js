@@ -16,20 +16,12 @@ router.get('/', function(req, res, next) {
             });
         }
     }
-    else {
-     // highRateProduct.applyTopProduct(products);
-      res.render('index', {
-        title: 'AcmeInc',
-        description: 'We sell the finest goods and services.',
-        products,
-      });
-    }
-  }
-  dbClient.getproducts({}, callBack)
+     dbClient.getProducts({}, callBack)
+ 
 });
 
 /* GET single-product information page. */
-
+     // highRateProduct.applyTopProduct(products);
 
 router.get('/products/:urlPath', function(req, res, next) {
     const urlPath = req.params.urlPath;
