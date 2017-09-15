@@ -5,7 +5,7 @@ const ratingData = (req, rates) => {
     function add(a, b) {
         return parseInt(a) + parseInt(b);
     }
-    let meanRates = sum / rates.length;
+    let meanRates = parseFloat(sum / rates.length).toPrecision(2);
     return ratings = {
         meanRates,
         rates
