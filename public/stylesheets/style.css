@@ -217,3 +217,13 @@ a:focus {
   background: -webkit-linear-gradient(to right, #ffc500, #c21500);
   background: linear-gradient(to right, #ffc500, #c21500);
 }
+
+/* edite product rating form */
+form select {
+  width: 65px;
+  height: 33px;
+  border-radius: 25px;
+  text-indent: 13px; 
+}
+
+.hideoption { display:none; visibility:hidden; height:0; font-size:0; }

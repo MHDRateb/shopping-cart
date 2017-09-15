@@ -7,7 +7,8 @@ const schema = new Schema({
     urlPath: String,
     title: String,
     price: Number,
-    rating: { type: String, default: "7/10" },
+    rating: { type: Number, default: 3 },
+    productRatings:{ type : Array , default : [] },
     commentCount: {
         type: Number,
         default: 1

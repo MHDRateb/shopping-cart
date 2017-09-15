@@ -85,6 +85,11 @@ npm run eslint
 ```
 4. The terminal will show the errors and their description inside the whole project, so try to solve it.
 
+## Some changes of your local shopcentre database
+to apply the new function of caluculate the product ratings, you should change your local database as the followings:-
+- change rating document from string to double type
+- add a new document called productRatings as Array type and put it empty.
+
 ## Collaborators
 Khaled Ali
 Nasir
