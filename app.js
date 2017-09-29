@@ -23,6 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/api/products', index);
 app.use('/products-admin', productAdmin);
 
 // catch 404 and forward to error handler

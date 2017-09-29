@@ -55,4 +55,18 @@ router.post('/products/:productId/comments', (req, res) => {
 
     dbClient.addComments(comment, callBack);
 });
+
+router.get('/api/products', function (req, res, next) {
+  
+  const callBack = (error, students) => {
+  if (error) {
+  res.sendStatus(500)
+  }
+  else {
+  res.json(students);
+  }
+  }
+  dbClient.getProducts({}, callBack);
+});
+  
 module.exports = router;
