@@ -35,6 +35,7 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
     "title": "Lorem",
     "price": 21,
     "rating": "4.5/5",
+    "productRatings":[3,4],
     "commentCount": 3
     },
     {
@@ -42,23 +43,32 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
     "title": "Ipsum",
     "price": 15,
     "rating": "4.75/5",
+    "productRatings":[3,2],
     "commentCount": 1,
     "isTopRated": true
     },
     {
     "urlPath": "dolor",
     "title": "Dolor",
-    "price": 32
+    "price": 32,
+    "rating": "4.75/5",
+    "productRatings":[3,3],
+     "commentCount": 1
     },
     {
     "urlPath": "sit",
     "title": "Sit",
-    "price": 42
+    "price": 42,
+    "rating": "4.75/5",
+    "productRatings":[3,3],
+     "commentCount": 1
     },
     {
     "urlPath": "amet",
     "title": "Amet",
-    "price": 12
+    "price": 12, "rating": "4.75/5",
+    "productRatings":[3,3],
+    "commentCount": 1
     }
     ].
 ```
