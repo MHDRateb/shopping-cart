@@ -11,28 +11,10 @@ router.post('/', (req, res) => {
             res.redirect('/');
         }
     }
-    if (req.body.rates === undefined) {
-        console.log("sorry you did not choose any rate");
-    }
-    else if (req.body.productRatings === undefined) {
-        let rates = [];
-        const ratings = calculateRating(req, rates);
-        let query = req.body.title;
-        dbChange.editRate(query, ratings, callBack);
-    }
-    else if (req.body.productRatings.length === 1) {
-        let rates = [];
-        rates.push(req.body.productRatings);
-        const ratings = calculateRating(req, rates);
-        let query = req.body.title;
-        dbChange.editRate(query, ratings, callBack);
-    }
-    else {
-        let rates = req.body.productRatings;
-        const ratings = calculateRating(req, rates);
-        let query = req.body.title;
-        dbChange.editRate(query, ratings, callBack);
-    }
+    let rates = req.body.productRatings;
+    const ratings = calculateRating(req, rates);
+    let query = req.body.title;
+    dbChange.editRate(query, ratings, callBack);
 })
 
 

@@ -2,11 +2,9 @@
     <h2 class="product__title">{{product.title}}</h2>
     <div class="product__price">${{product.price}}</div>
     <div class="product__rating">
-        <form action="/edit-rate" method="post">
-            <input name="title" type="hidden" value={{product.title}}>
+        <form action="/products/{{product._id}}/ratings" method="post">
             {{#each product.productRatings}}
-            <input name="productRatings" type="hidden" value={{this}}>
-            {{/each}}
+            <input name="productRatings" type="hidden" value={{this}}> {{/each}}
             <select name="rates" class="selectmenu">
                 <option selected="selected" disabled="disabled" class="hideoption">{{product.rating}}</option>
                  <option value="1">1</option>

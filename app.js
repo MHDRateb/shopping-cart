@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
 const productAdmin = require('./routes/product-admin');
-const productRate = require('./routes/edit-rate');
+
 
 const app = express();
 
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/products-admin', productAdmin);
-app.use('/edit-rate', productRate);
+app.use('/products/:productid/ratings', index);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
